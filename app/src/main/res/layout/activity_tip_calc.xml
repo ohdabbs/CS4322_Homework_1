@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tipGrid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/billTotalTV"
+            android:textSize="22sp"
+            android:text="@string/billTotalString"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+        />
+        <EditText
+            android:id="@+id/billTotalNoTip"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_gravity="left|center"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left|center"
+            />
+        <TextView
+            android:id="@+id/tenPercent"
+            android:textSize="24sp"
+            android:text="@string/tenPercent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/fifteenPercent"
+            android:textSize="24sp"
+            android:text="@string/fifteenPercent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/twentyPercent"
+            android:textSize="24sp"
+            android:text="@string/twentyPercent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tipText1"
+            android:textSize="24sp"
+            android:text="@string/tip"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/tenTip"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/fifteenTip"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/twentyTip"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/totalText1"
+            android:textSize="24sp"
+            android:text="@string/total"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/tenTotal"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/fifteenTotal"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/twentyTotal"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/customText"
+            android:text="@string/custom"
+            android:textSize="24sp"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"/>
+
+        <SeekBar
+            android:id="@+id/tipBar"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/customTipPercent"
+            android:layout_weight=".5"
+            android:text="@string/customDefault"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tipText2"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="@string/tip"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/tipAmountCustom"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/totalText2"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="@string/total"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+
+        <TextView
+            android:id="@+id/totalAmountCustom"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="@string/tipDefault"
+            android:layout_width="0dp"
+            android:layout_gravity="left|center"
+            />
+    </TableRow>
+
+
+</TableLayout>
